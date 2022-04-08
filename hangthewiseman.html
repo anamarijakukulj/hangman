@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang the wise man</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div id="first_screen">
+            <h1>HANG THE WISE MAN</h1>
+            <p>Please insert your name.</p>
+            <form id="name"  action="">
+                Name: <input type="text" id="uname" required>
+            </form>
+            <br>
+            <button id="playgame" form="name" formaction="game_screen">Play a game</button>
+        </div>
+
+        <div id="game_screen">
+            <h1>HANG THE WISE MAN</h1>
+
+            <p>Use the alphabet below to guess the word.</p>
+
+            <div class="wrapper">
+                <div id="buttons"></div>  
+                <div id="hold"></div> 
+                <p id="mylives"></p>
+                <canvas id="stickman">The stickman</canvas>
+                <div class="container">
+                  <button id="reset">Reset game</button>
+                </div>
+            </div>
+        </div>
+    <script src="play.jsx"></script>
+    </div>
+</body>
+</html>
